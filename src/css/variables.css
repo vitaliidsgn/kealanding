@@ -19,10 +19,10 @@
 
 	--transitionDefault: 0s;
 
-	--margin: 226px;
+	--margin: 72px;
+
 	--space: 60px;
 	--gap: 24px;
-
 	--indent: 30px;
 
 }
@@ -32,3 +32,9 @@ $tablet:  (min-width: 728px) and (max-width: 1199px);
 $mdWidth: (max-width: 1199px);
 $smWidth: (max-width: 727px);
 $xsWidth: (max-width: 374px);
+
+.color-accent {
+
+	color: var(--Accent);
+
+}
