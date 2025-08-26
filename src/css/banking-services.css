@@ -1,0 +1,99 @@
+.banking-services {
+
+	padding: var(--margin) 0;
+
+	&__box {
+
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 548px 548px;
+
+	}
+
+	&__item {
+
+		position: relative;
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		border-radius: 24px;
+
+	}
+
+	&__label {
+
+		display: flex;
+		margin-bottom: 16px;
+
+		span {
+
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: -0.011em;
+			padding: 5px 13px;
+			border: 1px solid var(--Grey);
+			border-radius: 16px;
+
+		}
+
+	}
+
+	ul {
+
+		column-count: 2;
+		column-gap: 32px;
+		margin: 32px 0 16px;
+
+		li {
+
+			padding-left: 32px;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='25' viewBox='0 0 20 25'%3E%3Cpath fill='%238A93B0' fill-rule='evenodd' d='M10 22.5c5.523 0 10-4.477 10-10s-4.477-10-10-10-10 4.477-10 10 4.477 10 10 10Zm4.735-12.322a1 1 0 0 0-1.47-1.356l-4.804 5.204-1.726-1.87a1 1 0 1 0-1.47 1.356l2.462 2.666a1 1 0 0 0 1.47 0l5.538-6Z'/%3E%3C/svg%3E%0A");
+			background-repeat: no-repeat;
+			padding-bottom: 16px;
+			break-inside: avoid;
+
+		}
+
+	}
+
+	&__btn {
+
+		display: flex;
+		margin-top: 24px;
+
+	}
+
+}
+
+.banking-services-item-content {
+
+	padding: 48px;
+	flex-grow: 1;
+
+}
+
+.banking-services-item-img {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	background: url(/images/sprite.svg) -px -px;
+
+	img {
+
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		border-radius: 24px;
+
+	}
+
+}

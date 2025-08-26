@@ -59,6 +59,12 @@
 		display: flex;
 		gap: 16px;
 
+		.btn {
+
+			padding: 12px 24px 11px;
+
+		}
+
 	}
 
 	&__menu {
