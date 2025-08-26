@@ -1,0 +1,138 @@
+.footer {
+
+	flex-shrink: 0;
+	color: var(--Sand);
+	position: relative;
+	background-color: var(--Black);
+
+	&__producthunt {
+
+		text-align: center;
+		padding: 64px 0;
+
+		.h3 {
+
+			@media $smWidth {
+
+				font-size: 24px;
+
+			}
+
+		}
+
+		&-img {
+
+			display: flex;
+			gap: 16px;
+			justify-content: center;
+			align-items: center;
+			margin-top: 24px;
+
+			@media $xsWidth {
+
+				img {
+
+					width: 200px;
+					height: auto;
+
+				}
+
+				& > img {
+
+					width: 24px;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&__box {
+
+		@media $smWidth {
+
+			font-size: 12px;
+			line-height: 24px;
+
+		}
+
+		a:not(:hover) {
+
+			text-decoration: underline;
+
+		}
+
+		@media $desktop {
+
+			a:hover {
+
+				color: var(--color);
+
+			}
+
+		}
+
+	}
+
+	&__grid {
+
+		display: grid;
+		align-items: center;
+		grid-template-columns: 256px 1fr 256px;
+		grid-template-areas: "copyright menu social";
+		padding: 32px 0;
+
+		@media $mdWidth {
+
+			text-align: center;
+			grid-template-columns: 1fr;
+			grid-template-areas: "social" "menu" "copyright";
+
+		}
+
+	}
+
+	&__menu {
+
+		grid-area: menu;
+
+		ul {
+
+			display: flex;
+			gap: 48px;
+			justify-content: center;
+
+			@media $smWidth {
+
+				gap: 24px;
+
+			}
+
+		}
+
+	}
+
+	&__copyright {
+
+		grid-area: copyright;
+
+	}
+
+	&__social {
+
+		grid-area: social;
+		display: flex;
+		justify-content: flex-end;
+
+		@media $mdWidth {
+
+			justify-content: center;
+			margin-bottom: 14px;
+
+		}
+
+	}
+
+}

@@ -1,0 +1,12 @@
+.social {
+
+	display: flex;
+	gap: var(--gap);
+
+	a:hover svg {
+
+		fill: var(--color);
+
+	}
+
+}

@@ -1,0 +1,70 @@
+.header {
+
+	flex-shrink: 0;
+	position: absolute;
+	top: 24px;
+	left: 0;
+	right: 0;
+	z-index: 1;
+
+	@media $mdWidth {
+
+		.center {
+
+			width: 100%;
+
+		}
+
+	}
+
+	@media $smWidth {
+
+
+	}
+
+	&__grid {
+
+		padding: 16px;
+		background-color: #fff;
+		box-shadow: 0 0 48px rgba(22, 26, 73, 0.08);
+		border-radius: 16px;
+
+		display: grid;
+		align-items: center;
+		gap: 32px;
+		grid-template-columns: auto 1fr auto;
+		grid-template-areas: "logo menu btns";
+
+		@media $smWidth {
+
+		}
+
+	}
+
+	&__logo {
+
+		display: flex;
+		grid-area: logo;
+		padding-left: 8px;
+
+		@media $smWidth {
+
+		}
+
+	}
+
+	&__btns {
+
+		grid-area: btns;
+		display: flex;
+		gap: 16px;
+
+	}
+
+	&__menu {
+
+		grid-area: menu;
+
+	}
+
+}

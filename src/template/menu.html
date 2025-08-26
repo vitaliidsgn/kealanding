@@ -1,0 +1,37 @@
+	<nav class="menu">
+
+		<div class="menu__tabs">
+
+			<button class="button menu__link" type="button">
+				Personal
+			</button>
+
+			<button class="button menu__link is-current" type="button">
+				Business
+			</button>
+
+		</div>
+
+		<ul class="menu__list">
+
+{% for name in ["Banking","Crypto","Fees","About us"] %}
+
+			<li class="menu__item">
+
+				<a class="menu__link" href="/">
+					{{ name }}
+				</a>
+
+			</li>
+
+{% endfor %}
+
+		</ul>
+
+		<hr class="menu__sep">
+
+		<a href="/" class="menu__link">
+			Become a Partner
+		</a>
+
+	</nav>

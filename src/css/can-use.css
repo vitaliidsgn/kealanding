@@ -1,0 +1,129 @@
+.can-use {
+
+	&__title {
+
+		text-align: center;
+		margin-bottom: var(--space);
+
+		@media $mdWidth {
+
+			padding-top: 48px;
+			border-top: 1px solid #222220;
+
+		}
+
+	}
+
+	&__list {
+
+		display: grid;
+		gap: 36px;
+		grid-template-columns: 1fr 1fr 1fr;
+
+		@media $mdWidth {
+
+			display: block;
+			text-align: center;
+			gap: 0;
+
+		}
+
+	}
+
+	&__item {
+
+		background-color: #171716;
+		padding: 32px;
+
+		@media $mdWidth {
+
+			background-color: transparent;
+			padding: 0 var(--indent);
+			font-size: 16px;
+
+		}
+
+	}
+
+	&__ico {
+
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		margin-bottom: 14px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #383835;
+
+		@media $mdWidth {
+
+			margin: 0 auto 24px;
+			width: 48px;
+			height: 48px;
+
+		}
+
+		svg {
+
+			fill: none;
+			stroke: var(--Sand);
+
+		}
+
+	}
+
+	&__heading {
+
+		margin-bottom: var(--gap);
+
+		@media $smWidth {
+
+			margin-bottom: 12px;
+
+		}
+
+	}
+
+	.swiper {
+
+		@media $mdWidth {
+
+			margin: 0 calc( var(--indent) * -1);
+			overflow: hidden;
+
+		}
+
+	}
+
+	.swiper-navigation {
+
+		position: relative;
+		display: flex;
+		justify-content: center;
+		gap: 24px;
+		margin-top: 48px;
+
+		.swiper-button-next,
+		.swiper-button-prev {
+
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: 0;
+			position: relative;
+			width: 32px;
+			height: 32px;
+
+			svg {
+
+				width: 16px;
+				height: 16px;
+
+			}
+
+		}
+
+	}
+
+}
