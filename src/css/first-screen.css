@@ -10,10 +10,17 @@
 		justify-content: space-between;
 		position: relative;
 
+		@media $smWidth {
+
+			display: block;
+
+		}
+
 	}
 
 	@media $smWidth {
 
+		padding-top: 112px;
 
 	}
 
@@ -43,6 +50,28 @@
 		margin-right: 64px;
 		margin-top: 4px;
 
+		@media $smWidth {
+
+			width: 100%;
+			margin: 32px 0 0;
+
+			&-img {
+
+				width: 221px;
+				height: 317px;
+
+			}
+
+			&::before {
+
+				width: 220px;
+				height: 320px;
+				border-radius: 36px;
+
+			}
+
+		}
+
 		&::before {
 
 			position: absolute;
@@ -68,6 +97,14 @@
 			background-color: var(--bg);
 			box-shadow: 0px 24px 48px rgba(22, 26, 73, 0.16);
 
+			@media $smWidth {
+
+				width: 250px;
+				height: auto;
+				bottom: 14px;
+
+			}
+
 		}
 
 	}
@@ -76,12 +113,24 @@
 
 		margin-bottom: 16px;
 
+		@media $smWidth {
+
+			margin-bottom: 10px;
+
+		}
+
 	}
 
 	&__desc {
 
 		opacity: 0.7;
 		margin-bottom: 32px;
+
+		@media $smWidth {
+
+			margin-bottom: 22px;
+
+		}
 
 	}
 
@@ -117,9 +166,49 @@
 		gap: 16px;
 		margin-bottom: 72px;
 
+		@media $smWidth {
+
+			flex-direction: column;
+			margin-bottom: 32px;
+
+		}
+
 	}
 
 	&__licensed {
+
+		@media $smWidth {
+
+			text-align: center;
+
+			ul {
+
+				gap: 0;
+
+			}
+
+			li {
+
+				display: block;
+				width: 50%;
+
+				&::before {
+
+					display: none;
+
+				}
+
+			}
+
+			img {
+
+				width: 40px;
+				height: 40px;
+				margin: 0 auto 12px;
+
+			}
+
+		}
 
 		ul {
 

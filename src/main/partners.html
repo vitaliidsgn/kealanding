@@ -2,25 +2,31 @@
 
 			<div class="center">
 
-				<div class="partners__list">
+				<p class="partners__title">
+					Our partners
+				</p>
 
-{% for img in ["our-partners","lseg-risk-intelligence","hrmny","sumsub","resistant-ai"] %}
+				<ul class="partners__list">
 
-{% if not loop.first %}
+{% for img in ["lseg-risk-intelligence","hrmny","sumsub","resistant-ai"] %}
 
-					<hr>
+					<li class="partners__item">
 
-{% endif %}
+						<picture>
 
-					<div class="partners__item">
+							<source srcset="/img/partners/{{ img }}--mobile.svg" media="(max-width: 727px)">
 
-						<img src="/img/partners/{{ img }}.svg" alt="" loading="lazy" width="100" height="30">
+							<source srcset="/img/partners/{{ img }}.svg">
 
-					</div>
+							<img src="/img/partners/{{ img }}.svg" alt="{{ img }}" loading="lazy" width="100" height="30">
+
+						</picture>
+
+					</li>
 
 {% endfor %}
 
-				</div>
+				</ul>
 
 			</div>
 

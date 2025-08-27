@@ -6,7 +6,14 @@
 
 				<a href="/" class="header__logo" title="{{ site }}">
 
-					<img src="/img/logo.svg" width="96" height="24" alt="{{ site }}" loading="eager">
+					<picture>
+
+						<source srcset="/img/logo-mobile.svg" media="(max-width: 727px)">
+						<source srcset="/img/logo.svg">
+
+						<img src="/img/logo.svg" width="96" height="24" alt="{{ site }}" loading="eager">
+
+					</picture>
 
 				</a>
 
@@ -18,13 +25,21 @@
 
 				<div class="header__btns">
 
-					<a href="{{ JoinWaitlist }}" target="_blank" class="btn btn--white">
+					<a href="{{ JoinWaitlist }}" target="_blank" class="btn btn--white hidden-sm">
 						Login
 					</a>
 
 					<a href="{{ JoinWaitlist }}" target="_blank" class="btn">
 						Get started
 					</a>
+
+					<button class="button menu-btn-toggle" type="button" aria-label="menu">
+
+						<svg width="20" height="20" viewBox="0 0 20 20">
+							<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.334 5h13.333M3.334 10h13.333M3.334 15h13.333"/>
+						</svg>
+
+					</button>
 
 				</div>
 
