@@ -1,28 +1,15 @@
 :root {
 
 	--color: #162042;
-	--Dark: #162042;
 	--bg: #F3F4F7;
-
-	--text: #586078;
 
 	--Accent: #1BBFCC;
 	--Grey: #8A93B0;
 	--LightGray: #F3F4F7;
 
-/*
---Sand: #EAE7DC;
-	--SandHover: #D3D0C6;
-*/
-
-	--border: #8A93B0;
-
 	--transitionDefault: 0s;
 
 	--margin: 72px;
-
-	--space: 60px;
-	--gap: 24px;
 	--indent: 30px;
 
 }

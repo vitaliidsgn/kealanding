@@ -2,19 +2,15 @@
 
 			<div class="center">
 
-				<h2 class="faq__title h2 fade-in">
+				<h2 class="faq__title h1">
 					Frequently Asked Questions
 				</h2>
-
-				<p class="faq__text fade-in fade-in--200">
-					Some answers to common questions.
-				</p>
 
 				<div class="faq__accordion accordion">
 
 {% for item in faq %}
 
-					<div class="accordion__item fade-in fade-in--400">
+					<div class="accordion__item">
 
 						<h3 class="accordion__head accordion__btn h4">
 							{{ item.head }}
@@ -22,7 +18,7 @@
 
 						<div class="accordion__body">
 
-							<div class="accordion__body-inner">
+							<div class="accordion__body-inner text">
 
 								{{ item.body | safe }}
 

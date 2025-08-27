@@ -20,10 +20,10 @@
 				  body = item.querySelector('.accordion__body'),
 				  arrow = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 
-			arrow.setAttributeNS(null, "viewBox", "0 0 32 32");
-			arrow.setAttributeNS(null, "width", 32);
-			arrow.setAttributeNS(null, "height", 32);
-			arrow.innerHTML = `<line x1="6" y1="16" x2="25" y2="16" stroke-width="1.5"/><line x1="16" y1="6" x2="16" y2="25" stroke-width="1.5"/>`;
+			arrow.setAttributeNS(null, "viewBox", "0 0 28 28");
+			arrow.setAttributeNS(null, "width", 28);
+			arrow.setAttributeNS(null, "height", 28);
+			arrow.innerHTML = `<line x1="7" y1="14" x2="21" y2="14" stroke-width="1.5"/><line x1="14" y1="7" x2="14" y2="21" stroke-width="1.5"/>`;
 
 			head.append(arrow);
 

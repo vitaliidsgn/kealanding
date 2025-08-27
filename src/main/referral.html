@@ -2,15 +2,15 @@
 
 			<div class="center">
 
-				<h2 class="h1">
-					Referral Network
-				</h2>
+				<div class="referral__header">
 
-				<p class="text">
-					Join our referral program - over 50 companies regularly earning their bonuses.
-				</p>
+					<h2 class="h1">
+						Referral Network
+					</h2>
 
-				<div class="referral__btn">
+					<p class="text">
+						Join our referral program - over 50 companies regularly earning their bonuses.
+					</p>
 
 					<a href="/" class="btn">
 						Discuss a partnership
@@ -20,7 +20,7 @@
 
 				<ul class="referral__list">
 
-{% for text in ["Legal and Compliance","Payments and Banking","Finance and Accounting","Business Consulting"] %}
+{% for text in ["Legal <br>and Compliance","Payments <br>and Banking","Finance <br>and Accounting","Business <br>Consulting"] %}
 
 					<li>
 
@@ -31,13 +31,13 @@
 								<source srcset="/img/referral/{{ loop.index }}.webp 1x, /img/referral/{{ loop.index }}@2x.webp 2x" type="image/webp">
 								<source srcset="/img/referral/{{ loop.index }}.jpg 1x, /img/referral/{{ loop.index }}@2x.jpg 2x">
 
-								<img src="/img/referral/{{ loop.index }}.jpg" alt="{{ text }}" loading="lazy" width="314" height="320">
+								<img src="/img/referral/{{ loop.index }}.jpg" alt="{{ text | striptags }}" loading="lazy" width="314" height="320">
 
 							</picture>
 
-							<figcaption class="h2">
+							<figcaption class="h3">
 
-								{{ text }}
+								{{ text | safe }}
 
 							</figcaption>
 

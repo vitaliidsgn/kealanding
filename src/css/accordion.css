@@ -11,15 +11,7 @@
 
 		&-inner {
 
-			/* margin-top: -14px; */
-			padding-bottom: 30px;
-
-			@media $smWidth {
-
-				/* margin-top: -6px; */
-				padding-bottom: 22px;
-
-			}
+			padding-bottom: 34px;
 
 		}
 
@@ -33,7 +25,7 @@
 
 	&__item {
 
-		border-bottom: 1px solid #222220;
+		border-bottom: 1px solid rgba(138, 147, 176, 0.3);
 
 	}
 
@@ -45,12 +37,14 @@
 		justify-content: space-between;
 		cursor: pointer;
 		user-select: none;
-		padding: 32px 0 28px;
+		padding: 32px 0 22px;
 		transition: var(--transitionDefault);
 
 		svg {
 
-			stroke: var(--color);
+			border-radius: 50%;
+			background-color: rgba(138, 147, 176, 0.7);
+			stroke: var(--bg);
 
 			line {
 
@@ -67,24 +61,9 @@
 
 				svg {
 
-					stroke: var(--Sand);
+
 
 				}
-
-			}
-
-		}
-
-		@media $smWidth {
-
-			font-size: 16px;
-			line-height: 24px;
-			padding: 24px 0 22px;
-
-			svg {
-
-				width: 24px;
-				height: 24px;
 
 			}
 

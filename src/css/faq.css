@@ -1,67 +1,23 @@
 .faq {
 
-	margin: 170px 0;
-
-	@media $smWidth {
-
-		margin: 48px 0;
-
-	}
+	padding: var(--margin) 0;
 
 	&__title {
 
 		text-align: center;
-		margin-bottom: 14px;
-
-		@media $mdWidth {
-
-			padding-top: 48px;
-			margin-bottom: 16px;
-			border-top: 1px solid #222220;
-
-		}
-
-	}
-
-	&__text {
-
-		text-align: center;
-		font-size: 24px;
-
-		@media $smWidth {
-
-			font-size: 20px;
-			line-height: 28px;
-
-		}
+		margin-bottom: 40px;
 
 	}
 
 	&__accordion {
 
-		max-width: 728px;
-		margin: 28px auto;
+		max-width: 880px;
+		margin: 0 auto;
 
-		@media $smWidth {
+		.text {
 
-			margin: 26px auto;
-
-		}
-
-		a {
-
-			color: var(--Sand);
-			text-decoration: underline;
-
-			@media $desktop {
-
-				&:hover {
-
-					text-decoration-color: transparent;
-
-				}
-
-			}
+			color: #586078;
+			max-width: 784px;
 
 		}
 
