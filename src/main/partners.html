@@ -1,0 +1,27 @@
+		<div class="partners">
+
+			<div class="center">
+
+				<div class="partners__list">
+
+{% for img in ["our-partners","lseg-risk-intelligence","hrmny","sumsub","resistant-ai"] %}
+
+{% if not loop.first %}
+
+					<hr>
+
+{% endif %}
+
+					<div class="partners__item">
+
+						<img src="/img/partners/{{ img }}.svg" alt="" loading="lazy" width="100" height="30">
+
+					</div>
+
+{% endfor %}
+
+				</div>
+
+			</div>
+
+		</div>

@@ -132,6 +132,15 @@ hr {
 
 }
 
+.h5 {
+
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 25px;
+	letter-spacing: 0.002em;
+
+}
+
 .link {
 
 	text-decoration: underline;

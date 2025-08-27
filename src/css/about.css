@@ -1,0 +1,201 @@
+.about {
+
+	padding: var(--margin) 0;
+
+	&__box {
+
+		border-radius: 24px;
+		outline:1px solid red;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+	}
+
+	&__item {
+
+		display: flex;
+
+	}
+
+	&__team {
+
+		padding: 48px;
+
+	}
+
+	&__label {
+
+		display: flex;
+		margin-bottom: 16px;
+
+		span {
+
+			padding: 5px 13px;
+			border: 1px solid rgba(22, 32, 66, 0.16);
+			border-radius: 16px;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: -0.011em;
+
+		}
+
+	}
+
+	&__text {
+
+		margin: 16px 0;
+		opacity: 0.7;
+
+	}
+
+	&__management {
+
+		display: flex;
+		gap: 16px;
+		margin: 48px 0;
+
+		li {
+
+			flex: 1;
+
+		}
+
+		img {
+
+			border-radius: 16px;
+			margin-bottom: 16px;
+
+		}
+
+		span {
+
+			display: block;
+
+		}
+
+		small {
+
+			display: block;
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: -0.01em;
+			opacity: 0.7;
+
+		}
+
+	}
+
+	&__tech {
+
+		display: flex;
+		padding: 20px 24px;
+		align-items: center;
+		justify-content: space-between;
+		gap: 8px;
+		background-color: var(--LightGray);
+		border-radius: 16px;
+
+		&-faces {
+
+			display: flex;
+			align-items: center;
+
+			img {
+
+				z-index: 1;
+
+			}
+
+			span {
+
+				padding: 6px 12px 6px 26px;
+				border: 1px solid rgba(138, 147, 176, 0.4);
+				border-radius: 0 20px 20px 0;
+
+				font-weight: 600;
+				font-size: 13px;
+				line-height: 23px;
+				letter-spacing: 0.002em;
+				color: #586078;
+				margin-left: -22px;
+
+			}
+
+		}
+
+	}
+
+	&__how {
+
+		margin: 20px;
+		padding: 70px 48px;
+		background-image: linear-gradient(180deg, var(--LightGray), #C2CEDA);
+		border-radius: 16px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+
+		ul {
+
+			font-size: 21px;
+			line-height: 29px;
+			letter-spacing: 0;
+
+			text-wrap: auto;
+
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 64px;
+
+			position: relative;
+
+			background:
+
+				repeating-linear-gradient(
+				  to right,
+				  rgba(22, 32, 66, 0.32) 0px,
+				  rgba(22, 32, 66, 0.32) 2px,
+				  transparent 2px,
+				  transparent 6px
+				) left / calc(50% - 32px) 1px no-repeat,
+
+				repeating-linear-gradient(
+				  to right,
+				  rgba(22, 32, 66, 0.32) 0px,
+				  rgba(22, 32, 66, 0.32) 2px,
+				  transparent 2px,
+				  transparent 6px
+				) right / calc(50% - 32px) 1px no-repeat,
+
+				repeating-linear-gradient(
+				  to bottom,
+				  rgba(22, 32, 66, 0.32) 0px,
+				  rgba(22, 32, 66, 0.32) 2px,
+				  transparent 2px,
+				  transparent 6px
+				) top / 1px calc(50% - 32px) no-repeat,
+
+				repeating-linear-gradient(
+				  to bottom,
+				  rgba(22, 32, 66, 0.32) 0px,
+				  rgba(22, 32, 66, 0.32) 2px,
+				  transparent 2px,
+				  transparent 6px
+				) bottom / 1px calc(50% - 32px) no-repeat;
+
+		}
+
+		svg {
+
+			background-color: rgba(255, 255, 255, .5);
+			border-radius: 30px;
+			margin-bottom: 20px;
+
+		}
+
+	}
+
+
+}

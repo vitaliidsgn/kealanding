@@ -1,0 +1,39 @@
+.partners {
+
+	padding: 24px 0;
+
+	&__list {
+
+		display: flex;
+		gap: 80px;
+		align-items: center;
+
+	}
+
+	&__item {
+
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+
+			width: auto;
+			height: auto;
+
+		}
+
+	}
+
+	hr {
+
+		width: 1px;
+		height: 32px;
+		opacity: 0.16;
+		flex-shrink: 0;
+		background-color: var(--color);
+
+	}
+
+}
