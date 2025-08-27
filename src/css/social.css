@@ -1,11 +1,18 @@
 .social {
 
 	display: flex;
-	gap: var(--gap);
+	gap: 12px;
 
-	a:hover svg {
+	a {
 
-		fill: var(--color);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 56px;
+		height: 56px;
+		background: rgba(255, 255, 255, 0.08);
+		border-radius: 50%;
+		color: #fff;
 
 	}
 

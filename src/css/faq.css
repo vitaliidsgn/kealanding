@@ -21,6 +21,53 @@
 
 		}
 
+		ol, ul {
+
+			margin: 12px 10px;
+
+			ol, ul {
+
+				margin: 0;
+
+			}
+
+		}
+
+		ol > li {
+
+			padding-left: 20px;
+			counter-increment: headings 1;
+
+			&::before {
+
+				content: counter(headings, decimal)'.';
+				position: absolute;
+				top: 0;
+				left: 0;
+
+			}
+
+		}
+
+		ul > li {
+
+			padding-left: 16px;
+
+			&::before {
+
+				position: absolute;
+				width: 4px;
+				height: 4px;
+				top: 12px;
+				left: 2px;
+				content: '';
+				background-color: currentColor;
+				border-radius: 50%;
+
+			}
+
+		}
+
 	}
 
 }

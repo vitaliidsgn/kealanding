@@ -23,9 +23,9 @@
 
 	}
 
-	&__item {
+	&__item + &__item {
 
-		border-bottom: 1px solid rgba(138, 147, 176, 0.3);
+		border-top: 1px solid rgba(138, 147, 176, 0.3);
 
 	}
 
