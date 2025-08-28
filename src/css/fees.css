@@ -1,6 +1,7 @@
 .fees {
 
 	padding: var(--margin) 0;
+	scroll-margin: calc( var(--indent) - var(--margin) );
 
 	@media $mdWidth {
 

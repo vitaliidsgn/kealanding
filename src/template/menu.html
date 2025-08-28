@@ -14,12 +14,29 @@
 
 		<ul class="menu__list">
 
-{% for name in ["Banking","Crypto","Fees","About us"] %}
+{% for item in [
+	{
+		name : "Banking",
+		href : "banking"
+	},
+	{
+		name : "Crypto",
+		href : "crypto"
+	},
+	{
+		name : "Fees",
+		href : "fees"
+	},
+	{
+		name : "About us",
+		href : "about"
+	}
+] %}
 
 			<li class="menu__item">
 
-				<a class="menu__link" href="/">
-					{{ name }}
+				<a class="menu__link" href="#{{ item.href }}">
+					{{ item.name }}
 				</a>
 
 			</li>
@@ -30,7 +47,7 @@
 
 		<hr class="menu__sep">
 
-		<a href="/" class="menu__link">
+		<a href="#referral" class="menu__link">
 			Become a Partner
 		</a>
 

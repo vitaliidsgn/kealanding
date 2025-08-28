@@ -43,8 +43,8 @@ require('dotenv').config();
 const site = process.env.SITE_NAME;
 const domain = process.env.DOMAIN;
 const ref = process.env.REF;
-const action = process.env.ACTION;
-const JoinWaitlist = process.env.JOIN_WAITLIST;
+const JoinLink = process.env.JOIN_LINK + '?ref=' + ref;
+const BookExpertCall = process.env.BOOK_AN_EXPERT_CALL;
 
 const html = (files, since = {}) => {
 
@@ -57,9 +57,9 @@ const html = (files, since = {}) => {
 				domain,
 				ref,
 				site,
-				action,
 				faq,
-				JoinWaitlist
+				JoinLink,
+				BookExpertCall
 			},
 			path: 'src/'
 		}))
@@ -80,9 +80,9 @@ const htmlBuild = () => {
 				domain,
 				ref,
 				site,
-				action,
 				faq,
-				JoinWaitlist,
+				JoinLink,
+				BookExpertCall,
 				build : true
 			},
 			path: 'src/'

@@ -41,4 +41,18 @@
 
 	});
 
+	menu.addEventListener('click', event => {
+
+		if ( event.target.closest('a') && event.target.closest('a').href.includes('#') ) {
+
+			document.body.classList.remove('menu-show');
+
+			setTimeout( () => document.documentElement.classList.remove('scroll-behavior-off'));
+
+			path.setAttribute('d','M3.334 5h13.333M3.334 10h13.333M3.334 15h13.333');
+
+		}
+
+	});
+
 })(document.querySelector('.menu'));
