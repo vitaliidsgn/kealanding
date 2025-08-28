@@ -112,19 +112,23 @@ hr {
 	line-height: 44px;
 	text-wrap: balance;
 
-	@media $smWidth {
+	@media $tablet {
 
-		font-size: 32px;
-		line-height: 36px;
-		letter-spacing: -0.001em;
-
-		&-sm {
+		&-tablet {
 
 			font-size: 32px;
 			line-height: 36px;
 			letter-spacing: -0.001em;
 
 		}
+
+	}
+
+	@media $smWidth {
+
+		font-size: 32px;
+		line-height: 36px;
+		letter-spacing: -0.001em;
 
 	}
 
@@ -137,6 +141,18 @@ hr {
 	line-height: 36px;
 	letter-spacing: 0.001em;
 	text-wrap: balance;
+
+	@media $tablet {
+
+		&-tablet {
+
+			font-weight: 700;
+			font-size: 21px;
+			line-height: 29px;
+
+		}
+
+	}
 
 	@media $smWidth {
 

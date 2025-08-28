@@ -13,6 +13,12 @@
 
 			padding-bottom: 34px;
 
+			@media $mdWidth {
+
+				padding-bottom: 20px;
+
+			}
+
 			@media $smWidth {
 
 				padding-bottom: 16px;
@@ -62,12 +68,18 @@
 
 		}
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			font-weight: 500;
 			font-size: 21px;
 			line-height: 29px;
 			letter-spacing: 0;
+			padding: 20px 0;
+
+		}
+
+		@media $smWidth {
+
 			padding: 16px 0;
 
 		}

@@ -2,7 +2,7 @@
 
 	padding: var(--margin) 0;
 
-	@media $smWidth {
+	@media $mdWidth {
 
 		padding-bottom: 0;
 
@@ -13,9 +13,15 @@
 		text-align: center;
 		margin-bottom: 40px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			text-align: left;
+			margin-bottom: 12px;
+
+		}
+
+		@media $smWidth {
+
 			margin-bottom: 16px;
 
 		}
@@ -31,6 +37,12 @@
 
 			color: #586078;
 			max-width: 784px;
+
+			@media $mdWidth {
+
+				max-width: 600px;
+
+			}
 
 		}
 

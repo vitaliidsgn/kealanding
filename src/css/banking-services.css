@@ -4,7 +4,7 @@
 	position: relative;
 	background-color: var(--bg);
 
-	@media $smWidth {
+	@media $mdWidth {
 
 		padding-bottom: 0;
 
@@ -17,10 +17,16 @@
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 548px 548px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: flex;
 			flex-direction: column;
+			gap: 24px;
+
+		}
+
+		@media $smWidth {
+
 			gap: 32px;
 
 		}
@@ -35,9 +41,7 @@
 		background-color: #fff;
 		border-radius: 24px;
 
-		@media $smWidth {
-
-			background-color: transparent;
+		@media $mdWidth {
 
 			&:nth-child(3) {
 
@@ -48,6 +52,17 @@
 			&:nth-child(4) {
 
 				order: 3;
+
+			}
+
+		}
+
+		@media $smWidth {
+
+			background-color: transparent;
+
+			&:nth-child(4) {
+
 				margin-top: 40px;
 
 			}
@@ -80,6 +95,12 @@
 		column-count: 2;
 		column-gap: 32px;
 		margin: 32px 0 16px;
+
+		@media $mdWidth {
+
+			column-gap: 16px;
+
+		}
 
 		@media $smWidth {
 
@@ -132,6 +153,12 @@
 	padding: 48px;
 	flex-grow: 1;
 
+	@media $mdWidth {
+
+		padding: 72px 48px;
+
+	}
+
 	@media $smWidth {
 
 		padding: 0;
@@ -148,7 +175,7 @@
 	right: 0;
 	bottom: 0;
 
-	@media $smWidth {
+	@media $mdWidth {
 
 		position: relative;
 

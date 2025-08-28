@@ -19,11 +19,6 @@
 
 	}
 
-	@media $smWidth {
-
-
-	}
-
 	&__grid {
 
 		padding: 16px;
@@ -37,7 +32,7 @@
 		grid-template-columns: auto 1fr auto;
 		grid-template-areas: "logo menu btns";
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			grid-template-columns: 1fr auto;
 			grid-template-areas: "logo btns";
@@ -63,9 +58,20 @@
 		grid-area: logo;
 		padding-left: 8px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			padding: 0;
+
+			img {
+
+				width: 96px;
+				height: 36px;
+
+			}
+
+		}
+
+		@media $smWidth {
 
 			img {
 
@@ -84,7 +90,7 @@
 		display: flex;
 		gap: 16px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			gap: 12px;
 			margin-left: auto;
@@ -110,7 +116,7 @@
 
 	&__btn-login {
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: none;
 
@@ -151,7 +157,7 @@
 
 		}
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			.menu-show & {
 
@@ -172,10 +178,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 36px;
-	height: 36px;
-	background-color: var(--bg);
-	border-radius: 8px;
+	background-color: #fff;
+	border-radius: 12px;
+	width: 48px;
+	height: 48px;
+
+	@media $smWidth {
+
+		width: 36px;
+		height: 36px;
+		border-radius: 8px;
+
+	}
 
 	svg {
 
@@ -192,7 +206,7 @@
 }
 
 
-@media $smWidth {
+@media $mdWidth {
 
 	.menu-show {
 

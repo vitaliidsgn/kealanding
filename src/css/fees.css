@@ -2,7 +2,7 @@
 
 	padding: var(--margin) 0;
 
-	@media $smWidth {
+	@media $mdWidth {
 
 		padding-bottom: 0;
 
@@ -17,11 +17,16 @@
 		background-color: #fff;
 		border-radius: 24px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			margin: 24px 0 18px;
-			padding: 8px;
 			grid-template-columns: 1fr 1fr;
+
+		}
+
+		@media $smWidth {
+
+			padding: 8px;
 
 		}
 
@@ -33,7 +38,7 @@
 		display: grid;
 		grid-template-columns: 1fr 304px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: contents;
 
@@ -60,7 +65,7 @@
 
 		}
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			padding: 20px;
 
@@ -87,7 +92,7 @@
 		margin: 22px 0 8px;
 		height: 2px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			margin: 15px 0 0;
 
@@ -100,7 +105,7 @@
 		display: flex;
 		gap: 32px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: grid;
 			grid-template-columns: 1fr;
@@ -130,7 +135,7 @@
 				padding-left: 32px;
 				position: relative;
 
-				@media $smWidth {
+				@media $mdWidth {
 
 					padding: 0;
 
@@ -181,7 +186,7 @@
 		background-color: #fff;
 		border-radius: 24px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: block;
 			padding: 20px;
@@ -193,7 +198,7 @@
 
 			flex-shrink: 0;
 
-			@media $smWidth {
+			@media $mdWidth {
 
 				display: flex;
 				justify-content: center;
@@ -205,7 +210,7 @@
 
 				border-radius: 16px;
 
-				@media $smWidth {
+				@media $mdWidth {
 
 					width: 120px;
 					height: 120px;
@@ -256,17 +261,13 @@
 			align-items: center;
 			flex-shrink: 0;
 
-			@media $smWidth {
+			@media $mdWidth {
 
 				padding: 24px 0 0;
 				margin-top: 24px;
 				border-top: 1px dashed currentColor;
-
-				.btn {
-
-					width: 100%;
-
-				}
+				display: flex;
+				justify-content: center;
 
 				&::before {
 
@@ -278,8 +279,18 @@
 
 			.btn {
 
-				padding-left: 64px;
-				padding-right: 64px;
+				@media $desktop {
+
+					padding-left: 64px;
+					padding-right: 64px;
+
+				}
+
+				@media $smWidth {
+
+					width: 100%;
+
+				}
 
 			}
 

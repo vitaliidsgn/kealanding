@@ -21,11 +21,11 @@
 
 }
 
-@media (max-width: 1335px) {
+@media (max-width: 1336px) {
 
 	.center {
 
-		width: 1200px;
+		width: 1216px;
 
 	}
 
@@ -52,7 +52,7 @@
 
 	.center {
 
-		width: 684px;
+		width: 720px;
 		padding: 0 var(--indent);
 
 	}

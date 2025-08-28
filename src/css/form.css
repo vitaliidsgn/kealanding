@@ -57,6 +57,16 @@
 
 	}
 
+	@media $tablet {
+
+		&-tablet {
+
+			padding: 12px 24px 11px;
+
+		}
+
+	}
+
 	@media $smWidth {
 
 		padding: 12px 24px 11px;

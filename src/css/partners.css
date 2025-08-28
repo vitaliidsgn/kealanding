@@ -2,7 +2,7 @@
 
 	padding: 24px 0;
 
-	@media $smWidth {
+	@media $mdWidth {
 
 		padding: var(--margin) 0 0;
 
@@ -14,7 +14,7 @@
 		align-items: center;
 		justify-content: space-between;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: block;
 
@@ -29,12 +29,17 @@
 		line-height: 29px;
 		opacity: 0.7;
 
+		@media $mdWidth {
+
+			text-align: center;
+			margin-bottom: 24px;
+			opacity: 1;
+
+		}
+
 		@media $smWidth {
 
 			font-weight: 500;
-			opacity: 1;
-			text-align: center;
-			margin-bottom: 24px;
 
 		}
 
@@ -85,7 +90,7 @@
 			background-color: var(--color);
 			content: '';
 
-			@media $smWidth {
+			@media $mdWidth {
 
 				display: none;
 

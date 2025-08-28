@@ -9,6 +9,9 @@
 
 	@media $mdWidth {
 
+		margin-top: 48px;
+		padding: 30px 0;
+
 		.center {
 
 			width: 100%;
@@ -20,13 +23,12 @@
 	@media $smWidth {
 
 		margin-top: 58px;
-		padding: 30px 0;
 
 	}
 
 	&__logo {
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			img {
 
@@ -41,7 +43,7 @@
 
 	&__desc {
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			margin: 16px 0 40px;
 
@@ -65,7 +67,7 @@
 		display: grid;
 		gap: 24px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: block;
 
@@ -80,7 +82,7 @@
 		align-items: center;
 		margin-bottom: 16px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: block;
 			margin-bottom: 40px;
@@ -111,7 +113,7 @@
 			opacity: 0.2;
 			background-color: #fff;
 
-			@media $smWidth {
+			@media $mdWidth {
 
 				display: none;
 
@@ -131,17 +133,23 @@
 		letter-spacing: 0.014em;
 		color: var(--Grey);
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			flex-direction: column;
 			gap: 12px;
-			margin: 6px 0 2px;
+			margin: 24px 0 2px;
 
 			li::before {
 
 				display: none;
 
 			}
+
+		}
+
+		@media $smWidth {
+
+			margin: 6px 0 2px;
 
 		}
 

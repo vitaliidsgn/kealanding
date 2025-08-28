@@ -4,7 +4,7 @@
 	gap: 24px;
 	align-items: center;
 
-	@media $smWidth {
+	@media $mdWidth {
 
 		display: block;
 		margin: 0 -12px;
@@ -39,7 +39,7 @@
 
 		}
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: none;
 
@@ -52,7 +52,7 @@
 		display: flex;
 		gap: 24px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: block;
 
@@ -66,7 +66,7 @@
 		height: 16px;
 		opacity: 0.16;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: none;
 
@@ -76,7 +76,7 @@
 
 	&__item {
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			border-bottom: 1px solid rgba(22, 32, 66, 0.12);
 
@@ -92,7 +92,7 @@
 		line-height: 20px;
 		letter-spacing: 0.014em;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			font-weight: 400;
 			font-size: 17px;

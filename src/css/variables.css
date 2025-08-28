@@ -9,14 +9,14 @@
 	--transitionDefault: 0s;
 
 	--margin: 72px;
-	--indent: 30px;
+	--indent: 32px;
 
 }
 
-$desktop: (min-width: 1200px);
-$tablet:  (min-width: 728px) and (max-width: 1199px);
-$mdWidth: (max-width: 1199px);
-$smWidth: (max-width: 727px);
+$desktop: (min-width: 1250px);
+$tablet:  (min-width: 720px) and (max-width: 1249px);
+$mdWidth: (max-width: 1249px);
+$smWidth: (max-width: 719px);
 $xsWidth: (max-width: 374px);
 
 .color-accent {

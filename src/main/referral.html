@@ -4,7 +4,7 @@
 
 				<div class="referral__header">
 
-					<h2 class="h1 h2-sm">
+					<h2 class="h1 h2-tablet">
 						Referral Network
 					</h2>
 
@@ -12,7 +12,7 @@
 						Join our referral program - over 50 companies regularly earning their bonuses.
 					</p>
 
-					<a href="/" class="btn">
+					<a href="/" class="btn btn-tablet">
 						Discuss a partnership
 					</a>
 
@@ -28,8 +28,11 @@
 
 							<picture>
 
-								<source srcset="/img/referral/{{ loop.index }}--mobile.webp" type="image/webp" media="(max-width: 727px)">
-								<source srcset="/img/referral/{{ loop.index }}--mobile.jpg" media="(max-width: 727px)">
+								<source srcset="/img/referral/{{ loop.index }}--mobile.webp" type="image/webp" media="(max-width: 719px)">
+								<source srcset="/img/referral/{{ loop.index }}--mobile.jpg" media="(max-width: 719px)">
+
+								<source srcset="/img/referral/{{ loop.index }}--tablet.webp" type="image/webp" media="(max-width: 1249px)">
+								<source srcset="/img/referral/{{ loop.index }}--tablet.jpg" media="(max-width: 1249px)">
 
 								<source srcset="/img/referral/{{ loop.index }}.webp 1x, /img/referral/{{ loop.index }}@2x.webp 2x" type="image/webp">
 								<source srcset="/img/referral/{{ loop.index }}.jpg 1x, /img/referral/{{ loop.index }}@2x.jpg 2x">
@@ -38,7 +41,7 @@
 
 							</picture>
 
-							<figcaption class="h3">
+							<figcaption class="h3 h3-tablet">
 
 								{{ text | safe }}
 
