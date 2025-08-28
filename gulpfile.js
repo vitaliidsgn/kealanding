@@ -71,10 +71,6 @@ const html = (files, since = {}) => {
 
 const htmlBuild = () => {
 
-	gulp.src([
-		'src/js/swiper-bundle.min.js'
-	]).pipe(gulp.dest('build/js'));
-
 	return gulp.src(['src/**/index.html'])
 		.pipe(nunjucksRender({
 			data: {
@@ -127,14 +123,7 @@ gulp.task('css', () => {
 
 gulp.task('js', () => {
 
-	return gulp.src([
-
-		'src/js/min/*.js',
-		'src/js/js.js',
-		'src/js/*.js',
-		'!src/js/swiper-bundle.min.js'
-
-	], {since: gulp.lastRun('js')})
+	return gulp.src('src/js/*.js', {since: gulp.lastRun('js')})
 
 		.pipe(debug({title: 'js'}))
 		.pipe(sourcemaps.init())
@@ -156,10 +145,6 @@ gulp.task('js', () => {
 });
 
 gulp.task('serve', () => {
-
-	gulp.src([
-		'src/js/swiper-bundle.min.js'
-	]).pipe(gulp.dest('build/js'));
 
 	server.init({
 		server: 'build',
