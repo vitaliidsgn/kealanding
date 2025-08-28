@@ -11,7 +11,7 @@ https://github.com/htmlpluscss/
 ( () => {
 
 	let lastScrollTop = 0;
-	const delta = 5; // минимальное изменение, чтобы сработало
+	const delta = 20; // минимальное изменение, чтобы сработало
 
 	window.addEventListener("load", () => {
 
@@ -22,8 +22,6 @@ https://github.com/htmlpluscss/
 	const header = document.querySelector('.header');
 
 	window.addEventListener("scroll", () => {
-
-		header.classList.toggle('is-bg', window.pageYOffset > 0 );
 
 		// menu
 
@@ -37,7 +35,6 @@ https://github.com/htmlpluscss/
 
 	});
 
-	header.classList.toggle('is-bg', window.pageYOffset > 0 );
 	document.documentElement.style.setProperty('--scrollMargin', header.clientHeight + 'px');
 
 	// resize

@@ -2,19 +2,11 @@
 
 	flex-shrink: 0;
 	position: fixed;
-	top: 0;
+	top: 24px;
 	left: 0;
 	right: 0;
 	z-index: 9;
 	transition: var(--transitionDefault);
-
-	&.is-bg {
-
-		background-color: #fff;
-		border-bottom: 1px solid var(--bg);
-		outline: 1px solid rgba(243, 244, 247, .5);
-
-	}
 
 	&.is-scrolled-up {
 
@@ -22,13 +14,21 @@
 
 		.menu-show & {
 
-			top: 0;
+			top: 24px;
+
+			@media $mdWidth {
+
+				top: 0;
+
+			}
 
 		}
 
 	}
 
 	@media $mdWidth {
+
+		top: 0;
 
 		.center {
 
@@ -45,8 +45,11 @@
 		display: grid;
 		align-items: center;
 		gap: 32px;
+		background-color: #fff;
 		grid-template-columns: auto 1fr auto;
 		grid-template-areas: "logo menu btns";
+		box-shadow: 0 0 48px rgba(22, 26, 73, 0.08);
+		border-radius: 16px;
 
 		@media $mdWidth {
 
@@ -54,6 +57,7 @@
 			grid-template-areas: "logo btns";
 			background-color: transparent;
 			padding: var(--indent) 0;
+			box-shadow: none;
 
 			.menu-show & {
 
