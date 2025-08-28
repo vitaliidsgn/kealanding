@@ -10,6 +10,9 @@ https://github.com/htmlpluscss/
 
 ( () => {
 
+	let lastScrollTop = 0;
+	const delta = 5; // минимальное изменение, чтобы сработало
+
 	window.addEventListener("load", () => {
 
 		document.documentElement.style.setProperty('--transitionDefault', '.1s');
@@ -21,6 +24,16 @@ https://github.com/htmlpluscss/
 	window.addEventListener("scroll", () => {
 
 		header.classList.toggle('is-bg', window.pageYOffset > 0 );
+
+		// menu
+
+		const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+		if (Math.abs(lastScrollTop - currentScroll) <= delta) return;
+
+		header.classList.toggle('is-scrolled-up', currentScroll > lastScrollTop && currentScroll > 100 );
+
+		lastScrollTop = currentScroll;
 
 	});
 

@@ -16,6 +16,18 @@
 
 	}
 
+	&.is-scrolled-up {
+
+		top: calc( var(--scrollMargin) * -1 );
+
+		.menu-show & {
+
+			top: 0;
+
+		}
+
+	}
+
 	@media $mdWidth {
 
 		.center {
