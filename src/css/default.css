@@ -10,6 +10,12 @@ html {
 
 	scroll-behavior: smooth;
 
+	&.scroll-behavior-off {
+
+		scroll-behavior: auto;
+
+	}
+
 }
 
 

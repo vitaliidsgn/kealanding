@@ -1,15 +1,21 @@
 .header {
 
 	flex-shrink: 0;
-	position: absolute;
-	top: 24px;
+	position: fixed;
+	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 1;
+	z-index: 9;
+	transition: var(--transitionDefault);
+
+	&.is-bg {
+
+		background-color: #fff;
+		border-bottom: 1px solid var(--bg);
+
+	}
 
 	@media $mdWidth {
-
-		top: 20px;
 
 		.center {
 
@@ -22,9 +28,6 @@
 	&__grid {
 
 		padding: 16px;
-		background-color: #fff;
-		/* box-shadow: 0 0 48px rgba(22, 26, 73, 0.08); */
-		border-radius: 16px;
 
 		display: grid;
 		align-items: center;
@@ -38,7 +41,7 @@
 			grid-template-areas: "logo btns";
 			background-color: transparent;
 			box-shadow: none;
-			padding: 0;
+			padding: 10px 0;
 
 			.menu-show & {
 

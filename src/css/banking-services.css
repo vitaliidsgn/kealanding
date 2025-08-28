@@ -176,14 +176,35 @@
 	right: 0;
 	bottom: 0;
 
+	&--4 {
+
+		@media $tablet {
+
+			padding: 20px;
+
+		}
+
+		@media $desktop {
+
+			top: 20px;
+			left: 20px;
+			right: 20px;
+			bottom: 20px;
+
+		}
+
+	}
+
 	@media $mdWidth {
 
 		position: relative;
+		flex-grow: 1;
 
 		&-bg {
 
 			position: relative;
 			height: auto;
+			width: 100%;
 
 		}
 

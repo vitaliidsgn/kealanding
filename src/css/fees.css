@@ -266,7 +266,7 @@
 
 				padding: 24px 0 0;
 				margin-top: 24px;
-				border-top: 1px dashed currentColor;
+				border-top: 1px dashed rgba(22, 32, 66, 0.32);
 				display: flex;
 				justify-content: center;
 
@@ -304,7 +304,7 @@
 				bottom: 0;
 				content: '';
 				opacity: 0.32;
-				border-left: 1px dashed currentColor;
+				border-left: 1px dashed rgba(22, 32, 66, 0.32);
 
 			}
 

@@ -16,4 +16,12 @@ https://github.com/htmlpluscss/
 
 	});
 
+	const header = document.querySelector('.header');
+
+	window.addEventListener("scroll", () => {
+
+		header.classList.toggle('is-bg', window.pageYOffset > 0 );
+
+	});
+
 })();
