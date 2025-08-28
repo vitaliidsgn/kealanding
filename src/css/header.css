@@ -22,6 +22,12 @@
 
 		top: calc( var(--scrollMargin) * -1 );
 
+		@media $mdWidth {
+
+			background-color: transparent;
+
+		}
+
 		.menu-show & {
 
 			top: 24px;

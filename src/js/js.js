@@ -10,8 +10,7 @@ https://github.com/htmlpluscss/
 
 ( () => {
 
-	let lastScrollTop = 0;
-	const delta = 20; // минимальное изменение, чтобы сработало
+	let lastScrollTop = window.pageYOffset;
 
 	window.addEventListener("load", () => {
 
@@ -23,17 +22,19 @@ https://github.com/htmlpluscss/
 
 	window.addEventListener("scroll", () => {
 
-		header.classList.toggle('is-bg', window.pageYOffset > 0 );
-
 		// menu
 
-		const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+		const currentScroll = window.pageYOffset;
 
-		if (Math.abs(lastScrollTop - currentScroll) <= delta) return;
+		if ( Math.abs(lastScrollTop - currentScroll ) > 32 ) {
 
-		header.classList.toggle('is-scrolled-up', currentScroll > lastScrollTop && currentScroll > 100 && currentScroll > window.innerHeight );
+			header.classList.toggle('is-scrolled-up', currentScroll > lastScrollTop && lastScrollTop > 0 );
 
-		lastScrollTop = currentScroll;
+			lastScrollTop = currentScroll;
+
+		}
+
+		header.classList.toggle('is-bg', window.pageYOffset > header.clientHeight );
 
 	});
 
