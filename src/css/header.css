@@ -8,6 +8,16 @@
 	z-index: 9;
 	transition: var(--transitionDefault);
 
+	&.is-bg {
+
+		@media $mdWidth {
+
+			background-color: #fff;
+
+		}
+
+	}
+
 	&.is-scrolled-up {
 
 		top: calc( var(--scrollMargin) * -1 );

@@ -23,6 +23,8 @@ https://github.com/htmlpluscss/
 
 	window.addEventListener("scroll", () => {
 
+		header.classList.toggle('is-bg', window.pageYOffset > 0 );
+
 		// menu
 
 		const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -34,6 +36,8 @@ https://github.com/htmlpluscss/
 		lastScrollTop = currentScroll;
 
 	});
+
+	header.classList.toggle('is-bg', window.pageYOffset > 0 );
 
 	document.documentElement.style.setProperty('--scrollMargin', header.clientHeight + 'px');
 

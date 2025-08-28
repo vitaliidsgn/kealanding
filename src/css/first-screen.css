@@ -113,6 +113,7 @@
 			margin: auto;
 			border-radius: 48px;
 			background-color: var(--bg);
+			will-change: box-shadow;
 			box-shadow: 0 24px 48px rgba(22, 26, 73, 0.16);
 
 			@media $mdWidth {
