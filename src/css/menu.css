@@ -4,6 +4,19 @@
 	gap: 24px;
 	align-items: center;
 
+	@media $smWidth {
+
+		display: block;
+		margin: 0 -12px;
+
+	}
+
+	@media $xsWidth {
+
+		margin: 0;
+
+	}
+
 	&__tabs {
 
 		display: flex;
@@ -26,12 +39,24 @@
 
 		}
 
+		@media $smWidth {
+
+			display: none;
+
+		}
+
 	}
 
 	&__list {
 
 		display: flex;
 		gap: 24px;
+
+		@media $smWidth {
+
+			display: block;
+
+		}
 
 	}
 
@@ -40,7 +65,22 @@
 		width: 1px;
 		height: 16px;
 		opacity: 0.16;
-		background-color: var(--color);
+
+		@media $smWidth {
+
+			display: none;
+
+		}
+
+	}
+
+	&__item {
+
+		@media $smWidth {
+
+			border-bottom: 1px solid rgba(22, 32, 66, 0.12);
+
+		}
 
 	}
 
@@ -51,6 +91,16 @@
 		font-size: 14px;
 		line-height: 20px;
 		letter-spacing: 0.014em;
+
+		@media $smWidth {
+
+			font-weight: 400;
+			font-size: 17px;
+			padding: 16px 12px;
+			line-height: 24px;
+			letter-spacing: 0.002em;
+
+		}
 
 		@media $desktop {
 

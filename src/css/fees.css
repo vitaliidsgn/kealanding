@@ -4,7 +4,7 @@
 
 	@media $smWidth {
 
-		padding-top: 0;
+		padding-bottom: 0;
 
 	}
 
@@ -52,6 +52,13 @@
 		padding: 24px;
 		background-color: var(--bg);
 		border-radius: 16px;
+
+		.h5 {
+
+			font-weight: 700;
+			letter-spacing: 0;
+
+		}
 
 		@media $smWidth {
 
@@ -109,7 +116,6 @@
 
 				font-size: 14px;
 				line-height: 20px;
-				letter-spacing: 0.002em;
 
 			}
 
@@ -145,7 +151,7 @@
 					bottom: 0;
 					content: '';
 					opacity: 0.32;
-					border-left: 1px dashed #162042;
+					border-left: 1px dashed var(--color);
 
 				}
 
@@ -223,7 +229,8 @@
 				b {
 
 					display: block;
-					font-weight: 600;
+					font-weight: 500;
+					letter-spacing: -0.01em;
 
 				}
 
@@ -251,11 +258,19 @@
 
 			@media $smWidth {
 
-				padding: 48px 0 0;
+				padding: 24px 0 0;
+				margin-top: 24px;
+				border-top: 1px dashed currentColor;
 
 				.btn {
 
 					width: 100%;
+
+				}
+
+				&::before {
+
+					display: none;
 
 				}
 
@@ -277,7 +292,7 @@
 				bottom: 0;
 				content: '';
 				opacity: 0.32;
-				border-left: 1px dashed #162042;
+				border-left: 1px dashed currentColor;
 
 			}
 

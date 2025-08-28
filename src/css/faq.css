@@ -2,10 +2,23 @@
 
 	padding: var(--margin) 0;
 
+	@media $smWidth {
+
+		padding-bottom: 0;
+
+	}
+
 	&__title {
 
 		text-align: center;
 		margin-bottom: 40px;
+
+		@media $smWidth {
+
+			text-align: left;
+			margin-bottom: 16px;
+
+		}
 
 	}
 

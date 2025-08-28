@@ -1,6 +1,14 @@
 .banking-services {
 
 	padding: var(--margin) 0;
+	position: relative;
+	background-color: var(--bg);
+
+	@media $smWidth {
+
+		padding-bottom: 0;
+
+	}
 
 	&__box {
 

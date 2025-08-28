@@ -13,6 +13,12 @@
 
 			padding-bottom: 34px;
 
+			@media $smWidth {
+
+				padding-bottom: 16px;
+
+			}
+
 		}
 
 	}
@@ -36,6 +42,7 @@
 		align-items: center;
 		justify-content: space-between;
 		cursor: pointer;
+		gap: 24px;
 		user-select: none;
 		padding: 32px 0 22px;
 		transition: var(--transitionDefault);
@@ -43,7 +50,7 @@
 		svg {
 
 			border-radius: 50%;
-			background-color: rgba(138, 147, 176, 0.7);
+			background-color: var(--color);
 			stroke: var(--bg);
 
 			line {
@@ -52,6 +59,16 @@
 				transform-origin: center;
 
 			}
+
+		}
+
+		@media $smWidth {
+
+			font-weight: 500;
+			font-size: 21px;
+			line-height: 29px;
+			letter-spacing: 0;
+			padding: 16px 0;
 
 		}
 
@@ -73,9 +90,15 @@
 
 	&__item.is-open &__head {
 
-		svg line:last-child {
+		svg {
 
-			transform: scaleY(0);
+			background-color: rgba(138, 147, 176, 0.7);
+
+			line:last-child {
+
+				transform: scaleY(0);
+
+			}
 
 		}
 

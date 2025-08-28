@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-color: red !important
+
 }
 
 body {
@@ -17,8 +17,7 @@ body {
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: scrollbar;
 	background-color: var(--bg);
-background-image: url(/css/1.png);
-background-position: top;
+
 }
 
 a {
@@ -81,13 +80,6 @@ hr {
 	font-size: 17px;
 	line-height: 1.47;
 	letter-spacing: 0.002em;
-
-	@media $smWidth {
-
-		font-weight: 500;
-		letter-spacing: -0.01em;
-
-	}
 
 }
 

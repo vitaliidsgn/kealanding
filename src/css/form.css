@@ -66,13 +66,14 @@
 	&--white {
 
 		color: var(--color);
-		background-color: #fff !important;
+		background-color: #fff;
 
 		@media $desktop {
 
 			&:hover {
 
 				color: rgba(22, 32, 66, .7);
+				background-color: #fff;
 
 			}
 

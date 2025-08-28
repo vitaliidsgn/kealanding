@@ -2,12 +2,17 @@
 
 	padding: var(--margin) 0;
 
+	@media $smWidth {
+
+		padding-bottom: 0;
+
+	}
+
 	&__box {
 
 		border-radius: 24px;
-		/* background-color: #fff; */
+		background-color: #fff;
 		display: grid;
-		outline:1px solid red;
 		grid-template-columns: 1fr 1fr;
 		position: relative;
 
@@ -29,6 +34,13 @@
 		@media $smWidth {
 
 			display: block;
+			border-radius: 16px;
+
+			&::after {
+
+				display: none;
+
+			}
 
 		}
 
@@ -46,7 +58,7 @@
 
 		@media $smWidth {
 
-			padding: 0;
+			padding: 20px;
 
 		}
 
@@ -56,6 +68,12 @@
 
 		display: flex;
 		margin-bottom: 16px;
+
+		@media $smWidth {
+
+			margin-bottom: 10px;
+
+		}
 
 		span {
 
@@ -76,6 +94,12 @@
 		margin: 16px 0;
 		opacity: 0.7;
 
+		@media $smWidth {
+
+			margin: 14px 0;
+
+		}
+
 	}
 
 	&__management {
@@ -86,7 +110,16 @@
 
 		@media $smWidth {
 
-			display: block;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			margin: 24px 0;
+			text-align: center;
+
+			img {
+
+				margin: 0 auto 16px;
+
+			}
 
 		}
 
@@ -130,6 +163,14 @@
 		gap: 8px;
 		background-color: var(--bg);
 		border-radius: 16px;
+
+		@media $smWidth {
+
+			flex-direction: column;
+			text-align: center;
+			gap: 18px;
+
+		}
 
 		&-faces {
 
@@ -175,11 +216,41 @@
 		@media $smWidth {
 
 			display: block;
+			padding: 20px;
 
 			ul {
 
-				display: block;
-				padding: 0;
+				grid-template-columns: 1fr;
+				gap: 18px;
+				padding: 20px 0 0;
+				background: none;
+				font-weight: 500;
+				font-size: 17px;
+				line-height: 25px;
+
+			}
+
+			li {
+
+				display: flex;
+				align-items: center;
+				gap: 16px;
+
+				& + li {
+
+					border-top: 1px dashed rgba(22, 32, 66, 0.32);
+					padding-top: 20px;
+
+				}
+
+			}
+
+			svg {
+
+				width: 48px;
+				height: 48px;
+				margin: 0;
+				align-self: flex-start;
 
 			}
 
