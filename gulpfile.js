@@ -42,6 +42,7 @@ require('dotenv').config();
 
 const site = process.env.SITE_NAME;
 const domain = process.env.DOMAIN;
+const ref = process.env.REF;
 const action = process.env.ACTION;
 const JoinWaitlist = process.env.JOIN_WAITLIST;
 
@@ -54,6 +55,7 @@ const html = (files, since = {}) => {
 			data: {
 				url: 'https://' + domain,
 				domain,
+				ref,
 				site,
 				action,
 				faq,
@@ -76,6 +78,7 @@ const htmlBuild = () => {
 			data: {
 				url: 'https://' + domain,
 				domain,
+				ref,
 				site,
 				action,
 				faq,

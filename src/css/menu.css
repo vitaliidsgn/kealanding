@@ -52,6 +52,16 @@
 		line-height: 20px;
 		letter-spacing: 0.014em;
 
+		@media $desktop {
+
+			&:hover {
+
+				color: rgba(22, 32, 66, .7);
+
+			}
+
+		}
+
 	}
 
 }

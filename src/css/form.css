@@ -51,7 +51,7 @@
 
 		&:hover {
 
-			/* background-color: var(--AccentHover); */
+			background-color: #15a8b2;
 
 		}
 
@@ -66,12 +66,13 @@
 	&--white {
 
 		color: var(--color);
-		background-color: #fff;
+		background-color: #fff !important;
 
 		@media $desktop {
 
 			&:hover {
 
+				color: rgba(22, 32, 66, .7);
 
 			}
 
@@ -82,13 +83,15 @@
 	&--outline {
 
 		color: var(--color);
-		background-color: transparent !important;
+		background-color: transparent;
 		box-shadow: 0 0 0 1px var(--color);
 
 		@media $desktop {
 
 			&:hover {
 
+				--color: var(--Accent);
+				background-color: #fff;
 
 			}
 
