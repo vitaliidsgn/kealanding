@@ -23,7 +23,7 @@
 
 		padding: 16px;
 		background-color: #fff;
-		box-shadow: 0 0 48px rgba(22, 26, 73, 0.08);
+		/* box-shadow: 0 0 48px rgba(22, 26, 73, 0.08); */
 		border-radius: 16px;
 
 		display: grid;
