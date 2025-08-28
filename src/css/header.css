@@ -12,6 +12,7 @@
 
 		background-color: #fff;
 		border-bottom: 1px solid var(--bg);
+		outline: 1px solid rgba(243, 244, 247, .5);
 
 	}
 
@@ -40,8 +41,7 @@
 			grid-template-columns: 1fr auto;
 			grid-template-areas: "logo btns";
 			background-color: transparent;
-			box-shadow: none;
-			padding: 10px 0;
+			padding: var(--indent) 0;
 
 			.menu-show & {
 
@@ -60,6 +60,8 @@
 		display: flex;
 		grid-area: logo;
 		padding-left: 8px;
+		position: relative;
+		z-index: 1;
 
 		@media $mdWidth {
 
@@ -98,6 +100,12 @@
 			gap: 12px;
 			margin-left: auto;
 
+			.menu-show & .btn {
+
+				display: none;
+
+			}
+
 		}
 
 		.btn {
@@ -117,56 +125,45 @@
 
 	}
 
-	&__btn-login {
+	&__menu {
 
-		@media $mdWidth {
+		grid-area: menu;
 
-			display: none;
+		&-foot {
 
-			.menu-show & {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			padding: 16px;
+			gap: 16px;
+			border-top: 1px solid rgba(22, 32, 66, 0.12);
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
 
-				display: block;
-				position: fixed;
-				bottom: 8px;
-				left: 8px;
-				right: 8px;
-				border-top: 1px solid rgba(22, 32, 66, 0.12);
-				padding: 10px;
+			@media $desktop {
 
-				.btn {
-
-					background-color: transparent;
-					font-weight: 700;
-					font-size: 17px;
-					line-height: 25px;
-					width: 100%;
-					padding: 12px 24px 11px;
-
-				}
+				display: none;
 
 			}
 
 		}
 
-	}
-
-	&__menu {
-
-		grid-area: menu;
-
 		@media $mdWidth {
 
 			display: none;
-
-		}
-
-		@media $mdWidth {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			right: 8px;
+			height: 80vh;
+			background-color: var(--bg);
+			border-radius: 24px;
+			padding-top: 60px;
 
 			.menu-show & {
 
 				display: block;
-				order: 3;
-				width: 100%;
 
 			}
 
@@ -181,7 +178,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #fff;
+	background-color: var(--bg);
 	border-radius: 12px;
 	width: 48px;
 	height: 48px;
@@ -203,22 +200,6 @@
 	@media $desktop {
 
 		display: none;
-
-	}
-
-}
-
-
-@media $mdWidth {
-
-	.menu-show {
-
-		.main,
-		.footer {
-
-			display: none;
-
-		}
 
 	}
 

@@ -7,7 +7,6 @@
 	@media $mdWidth {
 
 		display: block;
-		margin: 0 -12px;
 
 	}
 
@@ -76,12 +75,6 @@
 
 	&__item {
 
-		@media $mdWidth {
-
-			border-bottom: 1px solid rgba(22, 32, 66, 0.12);
-
-		}
-
 	}
 
 	&__link {
@@ -99,6 +92,8 @@
 			padding: 16px 12px;
 			line-height: 24px;
 			letter-spacing: 0.002em;
+			border-top: 1px solid rgba(22, 32, 66, 0.12);
+
 
 		}
 

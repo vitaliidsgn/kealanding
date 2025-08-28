@@ -21,17 +21,25 @@
 
 {% include "template/menu.html" %}
 
-				</div>
-
-				<div class="header__btns">
-
-					<div class="header__btn-login">
+					<div class="header__menu-foot">
 
 						<a href="https://dashboard.keabank.com/auth/sign-in?ref={{ ref }}" target="_blank" class="btn btn--white">
 							Login
 						</a>
 
+						<a href="{{ JoinLink }}" target="_blank" class="btn">
+							Get started
+						</a>
+
 					</div>
+
+				</div>
+
+				<div class="header__btns">
+
+					<a href="https://dashboard.keabank.com/auth/sign-in?ref={{ ref }}" target="_blank" class="btn btn--white hidden-sm">
+						Login
+					</a>
 
 					<a href="{{ JoinLink }}" target="_blank" class="btn">
 						Get started
