@@ -31,7 +31,7 @@ https://github.com/htmlpluscss/
 
 		if (Math.abs(lastScrollTop - currentScroll) <= delta) return;
 
-		header.classList.toggle('is-scrolled-up', currentScroll > lastScrollTop && currentScroll > 100 );
+		header.classList.toggle('is-scrolled-up', currentScroll > lastScrollTop && currentScroll > 100 && currentScroll > window.innerHeight );
 
 		lastScrollTop = currentScroll;
 
