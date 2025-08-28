@@ -40,7 +40,7 @@
 		align-items: center;
 		background-color: #fff;
 		border-radius: 24px;
-		scroll-margin: var(--indent);
+		scroll-margin: calc( 20px + var(--scrollMargin) );
 
 		@media $mdWidth {
 
@@ -178,9 +178,17 @@
 
 	&--4 {
 
-		@media $tablet {
+		@media $mdWidth {
 
 			padding: 20px;
+			background-color: #fff;
+			border-radius: 24px;
+
+		}
+
+		@media $smWidth {
+
+			padding: 10px;
 
 		}
 
