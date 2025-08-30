@@ -1,0 +1,129 @@
+		<div class="banking">
+
+			<div class="center">
+
+				<div class="banking__box">
+
+					<div class="banking__item" id="banking">
+
+						<div class="banking-item-img">
+
+							<picture>
+
+								<source srcset="/img/banking/img-1--mobile.webp" type="image/webp" media="(max-width: 719px)">
+								<source srcset="/img/banking/img-1--mobile.png" media="(max-width: 719px)">
+
+								<source srcset="/img/banking/img-1.webp 1x, /img/banking/img-1@2x.webp 2x" type="image/webp">
+								<source srcset="/img/banking/img-1.png 1x, /img/banking/img-1@2x.png 2x">
+
+								<img class="banking-item-img-bg" src="/img/banking/img-1.png" alt="" loading="lazy" width="654" height="548">
+
+							</picture>
+
+							<img class="banking-item-img-content" src="/img/banking/img-1.svg" alt="" loading="lazy" width="654" height="548">
+
+						</div>
+
+					</div>
+
+					<div class="banking__item">
+
+						<div class="banking-item-content">
+
+							<p class="banking__label">
+								<span>
+									KeaClassic
+								</span>
+							</p>
+
+							<h2 class="h2">
+								Traditional banking <br>
+								services
+							</h2>
+
+							<ul class="text">
+
+{% for li in ["Corporate Accounts: €, $","SEPA Payments","Kea Internal Transfers","Multy-Currency Support","Dedicated IBANs","SWIFT Payments","FX","Bank Account Statement"] %}
+
+								<li>
+									{{ li }}
+								</li>
+
+{% endfor %}
+
+							</ul>
+
+							<div class="banking__btn">
+
+								<a href="{{ BookExpertCall }}" class="btn btn-tablet">
+									Book an expert call
+								</a>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="banking__item" id="crypto">
+
+						<div class="banking-item-content">
+
+							<p class="banking__label">
+								<span>
+									KeaCrypto
+								</span>
+							</p>
+
+							<h2 class="h2">
+								Crypto payment <br>
+								solution
+							</h2>
+
+							<ul class="text">
+
+{% for li in ["Crypto processing","Corporate ON/OFF RAMP","Crypto wallets","Accept stablecoin payments","Crypto account statement","Crypto exchange"] %}
+
+								<li>
+									{{ li }}
+								</li>
+
+{% endfor %}
+
+							</ul>
+
+							<div class="banking__btn">
+
+								<a href="{{ BookExpertCall }}" class="btn btn-tablet">
+									Get expert advice—Book Now
+								</a>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="banking__item">
+
+						<div class="banking-item-img banking-item-img--4">
+
+							<picture>
+
+								<source srcset="/img/banking/img-4--mobile.svg" media="(max-width: 719px)">
+
+								<source srcset="/img/banking/img-4.svg">
+
+								<img class="banking-item-img-bg" src="/img/banking/img-4.svg" alt="" loading="lazy" width="654" height="548">
+
+							</picture>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>

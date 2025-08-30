@@ -89,11 +89,10 @@
 
 			font-weight: 400;
 			font-size: 17px;
-			padding: 16px 12px;
+			padding: 16px;
 			line-height: 24px;
 			letter-spacing: 0.002em;
 			border-top: 1px solid rgba(22, 32, 66, 0.12);
-
 
 		}
 
@@ -106,6 +105,42 @@
 			}
 
 		}
+
+	}
+
+}
+
+[data-tooltip] {
+
+	position: relative;
+	display: block;
+
+	&:hover::after {
+
+		position: absolute;
+		left: 50%;
+		margin-bottom: 12px;
+		transform: translateX(-50%);
+		bottom: 100%;
+		content: attr(data-tooltip);
+		white-space: nowrap;
+		font-size: 12px;
+		color: #fff;
+		padding: 4px 8px;
+		border-radius: 8px;
+		background-color: var(--color);
+
+	}
+
+	&:hover::before {
+
+		position: absolute;
+		left: 50%;
+		bottom: 100%;
+		content: '';
+		transform: translateX(-50%);
+		border: 7px solid transparent;
+		border-top-color: var(--color);
 
 	}
 

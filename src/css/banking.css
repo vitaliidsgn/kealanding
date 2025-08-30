@@ -1,4 +1,4 @@
-.banking-services {
+.banking {
 
 	padding: var(--margin) 0;
 	position: relative;
@@ -149,7 +149,7 @@
 
 }
 
-.banking-services-item-content {
+.banking-item-content {
 
 	padding: 48px;
 	flex-grow: 1;
@@ -168,7 +168,7 @@
 
 }
 
-.banking-services-item-img {
+.banking-item-img {
 
 	position: absolute;
 	top: 0;
